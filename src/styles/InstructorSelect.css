@@ -1,0 +1,92 @@
+
+.instructor-select {
+    position: relative;
+    width: 100%;
+}
+
+.instructor-select-input {
+    position: relative;
+}
+
+.instructor-select-input input {
+    width: 100%;
+    padding: 13px 45px 13px 15px;
+    border: 1px solid #d6d9e5;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #253047;
+}
+
+.instructor-select-input input:focus {
+    outline: none;
+    border-color: #6255d8;
+    box-shadow: 0 0 0 3px #6255d822;
+}
+
+.instructor-select-input input[aria-invalid="true"] {
+    border-color: #dc3545;
+}
+
+.instructor-clear {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.instructor-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 6px;
+    margin: 0;
+    list-style: none;
+    background: #ffffff;
+    border: 1px solid #e8e9f2;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(30, 40, 80, 0.12);
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.instructor-option {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.instructor-option strong {
+    font-size: 14px;
+    color: #253047;
+}
+
+.instructor-option span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.instructor-option:hover,
+.instructor-option.active {
+    background: #f0efff;
+}
+
+.instructor-option[aria-selected="true"] {
+    background: #e8e4ff;
+}
+
+.instructor-no-results {
+    padding: 15px;
+    color: #64748b;
+    font-size: 14px;
+    text-align: center;
+}
